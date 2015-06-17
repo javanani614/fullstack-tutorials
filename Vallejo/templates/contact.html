@@ -1,0 +1,48 @@
+{% include 'header.html' %}
+<div class="container">
+<form class="form-horizontal" role="form" method="POST" action="/signin">
+    <h1>Walker Sign In</h1>
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-3">
+            <input type="text" class="form-control" id="fname" name="first_name" placeholder="First Name" value="">
+        </div>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="lname" name="last_name" placeholder="Last Name" value="">
+        </div>
+         <div class="col-sm-1">    
+             <input type="text" class="form-control" id="mi" name="middle_initial" placeholder="MI" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="cellphone" class="col-sm-2 control-label">Cell Phone</label>
+        <div class="col-sm-2">
+            <input type="cellphone" class="form-control" id="cellphone" name="cellphone" placeholder="(###)###-####" value="">
+        </div>
+        <label for="email" class="col-sm-1 control-label">Email</label>
+        <div class="col-sm-6">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="route" class="col-sm-2 control-label">Route</label>
+        <div class="col-sm-1">    
+             <input type="text" class="form-control" id="routeid" name="route_id" placeholder="Route" value="">
+        </div>
+        <div class="col-sm-9">
+            <textarea class="form-control" rows="3" name="route_details"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="SignIn" class="btn btn-primary">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <! Will be used to display an alert to the user>
+        </div>
+    </div>
+</form>
+</div>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Fruit List</title>
+<script type="text/javascript">
+ // wait for the page to load
+    function makelist(){
+                   
+    // Establish the array which acts as a data source for the list
+    var listData = [ 'Blue' , 'Red' , 'White' , 'Green' , 'Black' , 'Orange'];
+
+    // Make a container element for the list - which is a <div>
+    // You don't actually need this container to make it work
+    var listContainer = document.createElement("div");
+	// add it to the page
+    document.getElementsByTagName("body")[0].appendChild(listContainer);
+    // Make the list itself which is a <ul>
+    var listElement = document.createElement("ul");
+
+    // add it to the page
+    listContainer.appendChild(listElement);
+    // Set up a loop that goes through the items in listItems one at a time
+    var numberOfListItems = listData.length;
+
+    for( var i =  0 ; i < numberOfListItems ; ++i){
+                
+    // create a <li> for each one.
+        var listItem = document.createElement("li");
+
+    // add the item text
+        listItem.innerHTML = listData[i];
+
+    // add listItem to the listElement
+        listElement.appendChild(listItem);
+
+    }
+
+}
+
+</script>
+<body 
+onLoad='makelist()'
+
+<form action="Bar" method="get">
+  
+  <input type="checkbox" name="drink_type" value="strong"> I like me drinks strong!<br>
+  <input type="checkbox" name="drink_type" value="salty"> I like it with a salty tang<br>
+  <input type="checkbox" name="drink_type" value="bitter"> I am a lubber and likes it bitter<br>
+  <input type="checkbox" name=""drink_type" value="sweet"> I prefer a bit of sweetness with me poison<br>
+  <input type="checkbox" name=""drink_type" value="fruity"> I am one for a fruity finish<br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+
+</html>
+<li>strong: Do ye like yer drinks strong?</li>
+				   <li>salty : Do ye like it with a salty tang?</li>
+				   <li>bitter: Are ye a lubber who likes it bitter </li>
+				   <li>sweet: Would ye like a bit of sweetness with yer poison?</li>
+		   		   <li>fruity": "Are ye one for a fruity finish?"</li>
+      		</body>		
+		</form>
